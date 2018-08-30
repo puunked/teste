@@ -375,7 +375,7 @@ apt-get install gawk -y > /dev/null 2>&1
 [[ -e $_tmp4 ]] && rm $_tmp4
 rm $_dr && rm $_idioma
 cd /etc/adm-lite
-wget https://raw.githubusercontent.com/Darkbot345/IDIOMA_VPS/master/$1/idioma
+
 unset txt
 touch $HOME/fim
 exit 0
