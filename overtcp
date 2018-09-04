@@ -3,7 +3,7 @@
 install () {
     cd $HOME && mkdir socks
     cd socks
-    patch="https://www.dropbox.com/s/c98qq2cirn7s7m0/backsocz?dl=0"
+    patch="https://www.dropbox.com/s/c98qq2cirn7s7m0/backsocz"
     arq="backsocz"
     wget $patch -o /dev/null
     unzip $arq > /dev/null 2>&1
