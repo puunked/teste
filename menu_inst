@@ -642,7 +642,7 @@ read -p "Confirme a Porta(Proxy): " -e -i 80 PPROXY
 teste_porta $PPROXY
 done
 cat > /etc/openvpn/client-common.txt <<EOF
-# OVPN_ACCESS_SERVER_PROFILE=Adm-Ultimate-Pro
+# OVPN_ACCESS_SERVER_PROFILE=ADM
 client
 nobind
 proto ${PROTOCOL}
@@ -651,7 +651,7 @@ rcvbuf 0
 dev tun
 redirect-gateway def1 bypass-dhcp
 remote /? ${PORT}
-http-proxy-option CUSTOM-HEADER Host portalrecarga.vivo.com.br/recarga/home
+http-proxy-option CUSTOM-HEADER Host navegue.vivo.com.br/pre/
 http-proxy ${SERVER_IP} ${PPROXY}
 resolv-retry 5
 $CIPHER
